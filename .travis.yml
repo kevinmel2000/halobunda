@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+install:
+- npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: oBD3sVVYfZ50GBP/nfuiv/PmmRzZu/+LL+DpT7D9jreHbFk8dlnPXcD1gE03X6oV4SBr6/z+4DiUrjutVbGVmpVPoWCiB0bEmvRHLCeIA2erT5waqvP2y6Anwodgp3+IQ4LfUaqWCT9mWd/nKfLfll2UrWdfVlLVcFkVdWVqwBE9ZmFYzgErLEiOC1Ql4+oEjfYe70oh0YFP5X7IxZYku7cQDE4Gw5qdhlckRjTeu57jLx/5fRI3Lao6EI5wu4ZA8SNVc55ZuAvTflPCJCZegsT8VvRkg2tptwIRXu1w7/HOtArtHvzTZyJcnyCXVUgbg/qbtQk2rZHxSGTWyTG/yIJTF3T8qXNS/TAsIqyVQKVYt38CfRv7ulelxVcHex9Vpv6m9t5aE2U3zIsMaeh2wGWDo48/wZ+BCRRNbwfTljzw3gjwpmWV2oVAtMXlxHnz5sqnwciIhlf0NKIXMA0QUO2zSPKYuUU67wCKVZcQBmbglzzuEf3IimMY6aV9eKMjoYdJtLpKcMvLRTU2hMYjyGK6FtidDlhM0LWn+mcVZidyzFJc10SduQM2Xutsq8yizw66pMTGmIpvSVHbYEdPUw4zud2Xieo2+6slcxBMaq7Cuu1UNd8rUQGM9Al5x3OsXkNtIKV1zaWGJ5tWOKlFzvwXb3kvyXgPSLZ4v9RRi/o=
+  app: halobunda
+  on:
+    repo: niwasmala/halobunda
